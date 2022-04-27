@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Natural drop cosmetics</title>
+</head>
+<body>
+
+    <svg display="none">
+        <symbol id="arrow-icon-prev" viewBox="0 0 68 55">
+            <g>
+                <path d="M14.1036 40.8964C21.5022 48.2951 33.4978 48.2951 40.8964 40.8964C48.2951 33.4978 48.2951 21.5022 40.8964 14.1036C33.4978 6.7049 21.5022 6.7049 14.1036 14.1036C6.7049 21.5022 6.7049 33.4978 14.1036 40.8964Z" stroke="#A5A64F"/>
+            </g>
+            <g style="fill:#000">
+                <path d="M27.6464 27.3536C27.4512 27.1583 27.4512 26.8417 27.6464 26.6464L30.8284 23.4645C31.0237 23.2692 31.3403 23.2692 31.5355 23.4645C31.7308 23.6597 31.7308 23.9763 31.5355 24.1716L28.7071 27L31.5355 29.8284C31.7308 30.0237 31.7308 30.3403 31.5355 30.5355C31.3403 30.7308 31.0237 30.7308 30.8284 30.5355L27.6464 27.3536ZM68 27.5L28 27.5V26.5L68 26.5V27.5Z"/>
+            </g>
+        </symbol>
+
+        <symbol id="arrow-icon-next" viewBox="0 0 68 55">
+            <g>
+                <path d="M53.8964 14.1036C61.2951 21.5022 61.2951 33.4978 53.8964 40.8964C46.4978 48.2951 34.5022 48.2951 27.1036 40.8964C19.7049 33.4978 19.7049 21.5022 27.1036 14.1036C34.5022 6.7049 46.4978 6.7049 53.8964 14.1036Z" stroke="#A5A64F"/>
+            </g>
+            <g style="fill:#000">
+                <path d="M40.3536 27.3536C40.5488 27.1583 40.5488 26.8417 40.3536 26.6464L37.1716 23.4645C36.9763 23.2692 36.6597 23.2692 36.4645 23.4645C36.2692 23.6597 36.2692 23.9763 36.4645 24.1716L39.2929 27L36.4645 29.8284C36.2692 30.0237 36.2692 30.3403 36.4645 30.5355C36.6597 30.7308 36.9763 30.7308 37.1716 30.5355L40.3536 27.3536ZM0 27.5H40V26.5H0V27.5Z"/>
+            </g>
+        </symbol>
+    </svg>
+
+<div class="page">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+
+                <div class="header__burger burger">
+                    <button class="burger__btn" type="button" id="burger__btn">
+                        <span class="burger__item"></span>
+                        <span class="burger__item"></span>
+                        <span class="burger__item"></span>
+                    </button>
+                </div>
+
+                <div class="header__mask" id="header__mask"></div>
+                <nav class="nav-menu" id="nav-menu">
+                    <div class="nav-menu__wrapper">
+
+                        <div class="nav-menu__block" id="nav-menu__block">
+                            <ul class="nav-menu__list">
+                                <li class="nav-menu__item nav-menu__item--size-xl">
+                                    <a href="catalog.html">Каталог</a>
+                                </li>
+                                <li class="nav-menu__item nav-menu__item--size-lg">
+                                    <a class="smooth-scroll" href="#best-sellers">Популярные товары</a>
+                                </li>
+                                <li class="nav-menu__item nav-menu__item--size-lg">
+                                    <a class="smooth-scroll" href="#stock">Акции</a>
+                                </li>
+                                <li class="nav-menu__item nav-menu__item--size-lg">
+                                    <a class="smooth-scroll" href="#blog">Блог</a>
+                                </li>
+                                <li class="nav-menu__item nav-menu__item--size-md">
+                                    <a class="smooth-scroll" href="#reviews">Отзывы</a>
+                                </li>
+                                <li class="nav-menu__item nav-menu__item--size-md">
+                                    <a href="#">Доставка и оплата</a>
+                                </li>
+                            </ul>
+                        </div><!-- /.nav-menu__block-->
+
+                        <div class="nav-menu__block" id="nav-menu__block-one">
+                            <ul class="nav-menu__list">
+                                <li class="nav-menu__item nav-menu__item--size-md">
+                                    <a href="#">Подарочные сертификаты</a>
+                                </li>
+                                <li class="nav-menu__item nav-menu__item--size-sm">
+                                    <a href="#">Оптовые закупки</a>
+                                </li>
+                                <li class="nav-menu__item nav-menu__item--size-sm">
+                                    <a href="#">Сертификаты</a>
+                                </li>
+                                <li class="nav-menu__item nav-menu__item--size-sm">
+                                    <a href="#">Бонусная программа</a>
+                                </li>
+                                <li class="nav-menu__item nav-menu__item--size-sm">
+                                    <a href="#">FAQ</a>
+                                </li>
+                                <li class="nav-menu__item nav-menu__item--size-sm">
+                                    <a href="#feedback">Обратная связь</a>
+                                </li>
+                            </ul>
+
+                            <h3 class="nav-menu__small-title">
+                                <a href="#contacts">Контакты</a>
+                            </h3>
+                            <ul>
+                                <li class="nav-menu__item nav-menu__item--size-xs">
+                                    <a href="tel:88001001010">8 800 100 10 10</a>
+                                </li>
+                                <li class="nav-menu__item nav-menu__item--size-xs">
+                                    <a href="mailto:info@naturaldrop.com">info@naturaldrop.com</a>
+                                </li>
+                            </ul>
+                        </div><!-- /.nav-menu__block-->
+
+                    </div><!-- /.nav-menu__wrapper-->
+                </nav>
+
+                <a class="logo" href="index.html">
+                    <picture>
+                        <source srcset="assets/img/logo/logo-small@1x.webp 1x, assets/img/logo/logo-small@2x.webp 2x" media="(max-width: 360px)" type="image/webp">
+                        <source srcset="assets/img/logo/logo-small.svg" media="(max-width: 360px)" type="image/svg+xml">
+
+                        <source srcset="assets/img/logo/logo-medium@1x.webp 1x, assets/img/logo/logo-medium@2x.webp 2x" media="(max-width: 575px)" type="image/webp">
+                        <source srcset="assets/img/logo/logo-medium.svg" media="(max-width: 575px)" type="image/svg+xml">
+
+                        <source srcset="assets/img/logo/logo-large@1x.webp 1x, assets/img/logo/logo-large@2x.webp 2x" media="(max-width: 875px)" type="image/webp">
+                        <source srcset="assets/img/logo-large.svg" media="(max-width: 875px)" type="image/svg+xml">
+
+                        <source srcset="assets/img/logo/logo@1x.webp 1x, assets/img/logo/logo@2x.webp 2x" type="image/webp">
+                        <source srcset="assets/img/logo/logo.svg" type="image/svg+xml">
+                        <img class="img" src="assets/img/logo/logo.png" alt="Логотип Natural drop">
+                    </picture>
+                </a>
+
+                <ul class="header__actions user-actions">
+                    <li class="user-actions__item">
+                        <a class="user-actions__link user-actions__link--account" href="#">
+                            <span class="visually-hidden">Личный кабинет</span>
+                        </a>
+                    </li>
+                    <li class="user-actions__item">
+                        <a class="user-actions__link user-actions__link--favorites" href="#">
+                            <span class="visually-hidden">Избранное</span>
+                        </a>
+                    </li>
+                    <li class="user-actions__item">
+                        <a class="user-actions__link user-actions__link--cart" href="#">
+                            <span class="visually-hidden">Корзина</span>
+                            <span class="user-actions__link-content">1</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div><!-- /.header__wrapper-->
+        </div><!-- /.container -->
+    </header>
+
+
+    <!-- Intro -->
+    <div class="intro" id="start">
+        <div class="container">
+            <div class="intro__wrapper">
+
+                <div class="intro__content block-division-small">
+                    <h2 class="intro__title">Натуральная косметика</h2>
+                    <h3 class="intro__subtitle">для вас и вашего дома</h3>
+                    <div class="intro__btn">
+                        <a class="btn btn--standard" href="catalog.html">Перейти в каталог</a>
+                    </div>
+                </div>
+
+                <div class="intro__slider intro-slider block-division-large">
+                    <div class="intro-slider__wrapper border-shift">
+
+                        <div class="intro-slider__inner swiper">
+                            <div class="swiper-wrapper">
+                                <div class="intro-slider__item swiper-slide">
+                                    <picture>
+                                        <source srcset="assets/img/intro-slider/intro-slider-photo-1-small@1x.webp 1x, assets/img/intro-slider/intro-slider-photo-1-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                        <source srcset="assets/img/intro-slider/intro-slider-photo-1-small@1x.jpg 1x, assets/img/intro-slider/intro-slider-photo-1-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                        <source srcset="assets/img/intro-slider/intro-slider-photo-1@1x.webp 1x, assets/img/intro-slider/intro-slider-photo-1@2x.webp 2x" type="image/webp">
+                                        <img class="img" src="assets/img/intro-slider/intro-slider-photo-1@1x.jpg" srcset="assets/img/intro-slider/intro-slider-photo-1@2x.jpg 2x" alt="Продукция Natural drop - кремы для лица">
+                                    </picture>
+                                </div>
+
+                                <div class="intro-slider__item swiper-slide">
+                                    <picture>
+                                        <source srcset="assets/img/intro-slider/intro-slider-photo-2-small@1x.webp 1x, assets/img/intro-slider/intro-slider-photo-2-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                        <source srcset="assets/img/intro-slider/intro-slider-photo-2-small@1x.jpg 1x, assets/img/intro-slider/intro-slider-photo-2-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                        <source srcset="assets/img/intro-slider/intro-slider-photo-2@1x.webp 1x, assets/img/intro-slider/intro-slider-photo-2@2x.webp 2x" type="image/webp">
+                                        <img class="img" src="assets/img/intro-slider/intro-slider-photo-2@1x.jpg" srcset="assets/img/intro-slider/intro-slider-photo-2@2x.jpg 2x" alt="Продукция Natural drop - массажный набор для лица">
+                                    </picture>
+                                </div>
+
+                                <div class="intro-slider__item swiper-slide">
+                                    <picture>
+                                        <source srcset="assets/img/intro-slider/intro-slider-photo-3-small@1x.webp 1x, assets/img/intro-slider/intro-slider-photo-3-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                        <source srcset="assets/img/intro-slider/intro-slider-photo-3-small@1x.jpg 1x, assets/img/intro-slider/intro-slider-photo-3-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                        <source srcset="assets/img/intro-slider/intro-slider-photo-3@1x.webp 1x, assets/img/intro-slider/intro-slider-photo-3@2x.webp 2x" type="image/webp">
+                                        <img class="img" src="assets/img/intro-slider/intro-slider-photo-3@1x.jpg" srcset="assets/img/intro-slider/intro-slider-photo-3@2x.jpg 2x" alt="Продукция Natural drop - увлажяющая сыворотка для лица">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div><!-- /.intro-slider__inner -->
+
+                        <div class="intro-slider__arrows arrows">
+                            <div class="arrows__wrapper">
+                                <button class="arrows__item intro-slider__arrows--prev" type="button">
+                                    <svg class="arrows__icon">
+                                        <use href="#arrow-icon-prev"></use>
+                                    </svg>
+                                </button>
+                                <button class="arrows__item intro-slider__arrows--next" type="button">
+                                    <svg class="arrows__icon">
+                                        <use href="#arrow-icon-next"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div><!-- /.intro-slider__arrows -->
+
+                    </div><!-- /.intro-slider__wrapper -->
+                </div><!-- /.intro__slider -->
+            </div><!-- /.intro__wrapper -->
+
+            <ul class="intro__social-list social">
+                <li class="social__item">
+                    <a href="#" target="_blank">instagram</a>
+                </li>
+                <li class="social__item">
+                    <a href="#" target="_blank">vk</a>
+                </li>
+                <li class="social__item">
+                    <a href="#" target="_blank">telegram</a>
+                </li>
+            </ul>
+        </div><!-- /.container -->
+    </div><!-- /.intro -->
+
+
+    <main>
+        <h1 class="visually-hidden">Natural drop - натуральная косметика для вас и вашего дома</h1>
+
+        <!-- Otherness -->
+        <section class="section">
+            <div class="container">
+                <h2 class="visually-hidden">Что нас отличает</h2>
+
+                <div class="otherness">
+                    <div class="otherness__item" data-aos="fade-down" data-aos-offset="30">
+                        <picture>
+                            <source srcset="assets/img/otherness/tree/otherness-img-tree-small@1x.webp 1x, assets/img/otherness/tree/otherness-img-tree-small@2x.webp 2x" media="(max-width: 875px)" type="image/webp">
+                            <source srcset="assets/img/otherness/tree/otherness-img-tree-small@1x.png 1x, assets/img/otherness/tree/otherness-img-tree-small@2x.png 2x" media="(max-width: 875px)" type="image/png">
+
+                            <source srcset="assets/img/otherness/tree/otherness-img-tree@1x.webp 1x, assets/img/otherness/tree/otherness-img-tree@2x.webp 2x" type="image/webp">
+                            <img class="otherness__icon" src="assets/img/otherness/tree/otherness-img-tree@1x.png" srcset="assets/img/otherness/tree/otherness-img-tree@2x.png 2x" alt="Зеленое дерево - натуральные консерванты">
+                        </picture>
+                        <h3 class="otherness__title">Paraben Free</h3>
+                        <div class="otherness__description">
+                            <p>Мы используем только натуральные консерванты</p>
+                        </div>
+                    </div><!-- /.otherness__item -->
+
+                    <div class="otherness__item" data-aos="fade-down" data-aos-offset="30" data-aos-delay="150">
+                        <picture>
+                            <source srcset="assets/img/otherness/bottle/otherness-img-bottle-small@1x.webp 1x, assets/img/otherness/bottle/otherness-img-bottle-small@2x.webp 2x" media="(max-width: 875px)" type="image/webp">
+                            <source srcset="assets/img/otherness/bottle/otherness-img-bottle-small@1x.png 1x, assets/img/otherness/bottle/otherness-img-bottle-small@2x.png 2x" media="(max-width: 875px)" type="image/png">
+
+                            <source srcset="assets/img/otherness/bottle/otherness-img-bottle@1x.webp 1x, assets/img/otherness/bottle/otherness-img-bottle@2x.webp 2x" type="image/webp">
+                            <img class="otherness__icon" src="assets/img/otherness/bottle/otherness-img-bottle@1x.png"  srcset="assets/img/otherness/bottle/otherness-img-bottle@2x.png 2x" alt="Зеленая колба - отсутствие сульфатов">
+                        </picture>
+                        <h3 class="otherness__title"><span>Sls</span>/Sles Free</h3>
+                        <div class="otherness__description">
+                            <p>Производимая нами косметика не содержит сульфатов</p>
+                        </div>
+                    </div><!-- /.otherness__item -->
+
+                    <div class="otherness__item" data-aos="fade-down" data-aos-offset="30" data-aos-delay="250">
+                        <picture>
+                            <source srcset="assets/img/otherness/drop/otherness-img-drop-small@1x.webp 1x, assets/img/otherness/drop/otherness-img-drop-small@2x.webp 2x" media="(max-width: 875px)" type="image/webp">
+                            <source srcset="assets/img/otherness/drop/otherness-img-drop-small@1x.png 1x, assets/img/otherness/drop/otherness-img-drop-small@2x.png 2x" media="(max-width: 875px)" type="image/png">
+
+                            <source srcset="assets/img/otherness/drop/otherness-img-drop@1x.webp 1x, assets/img/otherness/drop/otherness-img-drop@2x.webp 2x" type="image/webp">
+                            <img class="otherness__icon" src="assets/img/otherness/drop/otherness-img-drop@1x.png" srcset="assets/img/otherness/drop/otherness-img-drop@2x.png 2x" alt="Зеленая капля - продукты растительного происхождения">
+                        </picture>
+                        <h3 class="otherness__title">Vegan</h3>
+                        <div class="otherness__description">
+                            <p>Не содержит продукты животного происхождения</p>
+                        </div>
+                    </div><!-- /.otherness__item -->
+                </div><!-- /.otherness -->
+
+            </div><!-- /.container -->
+        </section>
+
+
+        <!-- About-brand -->
+        <section class="section section--accent">
+            <div class="container">
+                <h2 class="section__title" data-aos="fade-right">О бренде</h2>
+
+                <div class="about-brand">
+                    <div class="about-brand__content" data-aos="fade-right" data-aos-offset="200">
+                        <p>Natural Drop &mdash; продукты с натуральным составом, разработанные совместно с дерматологами и направленные на улучшение качества повседневного ухода за кожей наших клиентов. Все ингредиенты проходят строгий отбор и сертификацию в соответствии с эко - стандартами</p>
+                        <p>Мы так же разработали линейку продукции по уходу за домом, которая позволяет без проблем для кожи рук решать ежедневные бытовые задачи.</p>
+                        <p>Поскольку Natural Drop старается полностью поддерживать новейшие достижения науки и тренд экологичности, наши упаковки полностью экологичны.</p>
+                    </div>
+
+                    <div class="about-brand__photo about-brand-photo" data-aos="fade-left" data-aos-offset="210">
+                        <div class="about-brand-photo__wrapper">
+                            <div class="about-brand-photo__inner">
+                                <picture>
+                                    <source srcset="assets/img/about-brand/about-brand-1-small@1x.webp 1x, assets/img/about-brand/about-brand-1-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                    <source srcset="assets/img/about-brand/about-brand-1-small@1x.jpg 1x, assets/img/about-brand/about-brand-1-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                    <source srcset="assets/img/about-brand/about-brand-1@1x.webp 1x, assets/img/about-brand/about-brand-1@2x.webp 2x" type="image/webp">
+                                    <img class="img" src="assets/img/about-brand/about-brand-1@1x.jpg" srcset="assets/img/about-brand/about-brand-1@2x.jpg 2x" alt="Девушка, наносщая Скраб для лица с виноградными косточками">
+                                </picture>
+
+                                <picture>
+                                    <source srcset="assets/img/about-brand/about-brand-2-small@1x.webp 1x, assets/img/about-brand/about-brand-2-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                    <source srcset="assets/img/about-brand/about-brand-2-small@1x.jpg 1x, assets/img/about-brand/about-brand-2-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                    <source srcset="assets/img/about-brand/about-brand-2@1x.webp 1x, assets/img/about-brand/about-brand-2@2x.webp 2x" type="image/webp">
+                                    <img class="img about-brand-photo__small" src="assets/img/about-brand/about-brand-2@1x.jpg" srcset="assets/img/about-brand/about-brand-2@2x.jpg 2x" alt="Увлажняющая сыворотка для лица с розой">
+                                </picture>
+                            </div>
+                        </div><!-- /.about-brand-photo__wrapper -->
+                    </div><!-- /.about-brand__photo -->
+                </div><!-- /.about-brand -->
+
+            </div><!-- /.containeer -->
+        </section>
+
+
+        <!-- Best-sellers -->
+        <section class="section" id="best-sellers">
+            <div class="container">
+                <h2 class="section__title" data-aos="fade-right">Популярные товары</h2>
+
+                <div class="best-sellers">
+                    <div class="best-sellers__slider-arrows arrows" data-aos="fade-left">
+                        <div class="arrows__wrapper">
+                            <button class="arrows__item slider-card-arrows--prev" type="button">
+                                <svg class="arrows__icon">
+                                    <use href="#arrow-icon-prev"></use>
+                                </svg>
+                            </button>
+                            <button class="arrows__item slider-card-arrows--next" type="button">
+                                <svg class="arrows__icon">
+                                    <use href="#arrow-icon-next"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div><!-- /.best-sellers__slider-arrows -->
+
+                    <div class="best-sellers__slider-content" data-aos="fade-left">
+                        <div class="slider-card-list card-list swiper">
+                            <ul class="swiper-wrapper">
+                                <li class="card-list__item swiper-slide">
+                                    <div class="card-item">
+                                        <div class="card-item__attribute">
+                                            <button class="btn-favorite" type="button" title="Добавить в избранное">
+                                                <span class="visually-hidden">Добавить в избранное</span>
+                                            </button>
+                                        </div>
+                                        <a class="card-item__link" href="card.html">
+                                            <picture>
+                                                <source srcset="assets/img/product/product-img-1-small@1x.webp 1x, assets/img/product/product-img-1-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                                <source srcset="assets/img/product/product-img-1-small@1x.jpg 1x, assets/img/product/product-img-1-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                                <source srcset="assets/img/product/product-img-1@1x.webp 1x, assets/img/product/product-img-1@2x.webp 2x" type="image/webp">
+                                                <img class="img card-item__img" src="assets/img/product/product-img-1@1x.jpg" srcset="assets/img/product/product-img-1@2x.jpg 2x" alt="Гель для душа с лавандой">
+                                            </picture>
+                                        </a>
+
+                                        <div class="card-item__content">
+                                            <div class="card-item__info-block">
+                                                <div class="card-item__rating rating">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input class="rating__item" type="radio" value="1" name="rating">
+                                                            <input class="rating__item" type="radio" value="2" name="rating">
+                                                            <input class="rating__item" type="radio" value="3" name="rating">
+                                                            <input class="rating__item" type="radio" value="4" name="rating">
+                                                            <input class="rating__item" type="radio" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">5.0</div>
+                                                </div>
+                                                <a class="card-item__link-reviews" href="#">63 отзывов</a>
+                                            </div>
+                                            <h4 class="card-item__title">
+                                                <a href="card.html" title="Гель для душа с лавандой">Гель для душа с лавандой</a>
+                                            </h4>
+                                            <div class="card-item__important-info">
+                                                <div class="card-item__volume">
+                                                    <p>125 мл</p>
+                                                    <p>250 мл</p>
+                                                </div>
+                                                <p class="card-item__price">от 760 <span>&#8381;</span></p>
+                                            </div>
+                                            <button class="card-item__button btn btn--long" type="button">В корзину</button>
+                                        </div><!-- /.card-item__content -->
+                                    </div><!-- /.card-item -->
+                                </li>
+
+                                <li class="card-list__item swiper-slide">
+                                    <div class="card-item">
+                                        <p class="card-item__chevron card-item__chevron--new">Новинка</p>
+                                        <div class="card-item__attribute">
+                                            <button class="btn-favorite" type="button" title="Добавить в избранное">
+                                                <span class="visually-hidden">Добавить в избранное</span>
+                                            </button>
+                                        </div>
+                                        <a class="card-item__link" href="card.html">
+                                            <picture>
+                                                <source srcset="assets/img/product/product-img-2-small@1x.webp 1x, assets/img/product/product-img-2-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                                <source srcset="assets/img/product/product-img-2-small@1x.jpg 1x, assets/img/product/product-img-2-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                                <source srcset="assets/img/product/product-img-2@1x.webp 1x, assets/img/product/product-img-2@2x.webp 2x" type="image/webp">
+                                                <img class="img card-item__img" src="assets/img/product/product-img-2@1x.jpg" srcset="assets/img/product/product-img-2@2x.jpg 2x" alt="Молочко для тела с кокосом">
+                                            </picture>
+                                        </a>
+
+                                        <div class="card-item__content">
+                                            <div class="card-item__info-block">
+                                                <div class="card-item__rating rating">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input class="rating__item" type="radio" value="1" name="rating">
+                                                            <input class="rating__item" type="radio" value="2" name="rating">
+                                                            <input class="rating__item" type="radio" value="3" name="rating">
+                                                            <input class="rating__item" type="radio" value="4" name="rating">
+                                                            <input class="rating__item" type="radio" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">4.9</div>
+                                                </div>
+                                                <a class="card-item__link-reviews" href="#">11 отзывов</a>
+                                            </div>
+                                            <h4 class="card-item__title">
+                                                <a href="card.html" title="Молочко для тела с кокосом">Молочко для тела с кокосом</a>
+                                            </h4>
+                                            <div class="card-item__important-info">
+                                                <div class="card-item__volume">
+                                                    <p>150 мл</p>
+                                                    <p>300 мл</p>
+                                                </div>
+                                                <p class="card-item__price">от 650 <span>&#8381;</span></p>
+                                            </div>
+                                            <button class="card-item__button btn btn--long" type="button">В корзину</button>
+                                        </div><!-- /.card-item__content -->
+                                    </div><!-- /.card-item -->
+                                </li>
+
+                                <li class="card-list__item swiper-slide">
+                                    <div class="card-item">
+                                        <div class="card-item__attribute">
+                                            <button class="btn-favorite" type="button" title="Добавить в избранное">
+                                                <span class="visually-hidden">Добавить в избранное</span>
+                                            </button>
+                                        </div>
+                                        <a class="card-item__link" href="card.html">
+                                            <picture>
+                                                <source srcset="assets/img/product/product-img-3-small@1x.webp 1x, assets/img/product/product-img-3-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                                <source srcset="assets/img/product/product-img-3-small@1x.jpg 1x, assets/img/product/product-img-3-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                                <source srcset="assets/img/product/product-img-3@1x.webp 1x, assets/img/product/product-img-3@2x.webp 2x" type="image/webp">
+                                                <img class="img card-item__img" src="assets/img/product/product-img-3@1x.jpg" srcset="assets/img/product/product-img-3@2x.jpg 2x" alt="Антиоксидантная сыворотка">
+                                            </picture>
+                                        </a>
+                                        <div class="card-item__content">
+                                            <div class="card-item__info-block">
+                                                <div class="card-item__rating rating">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input class="rating__item" type="radio" value="1" name="rating">
+                                                            <input class="rating__item" type="radio" value="2" name="rating">
+                                                            <input class="rating__item" type="radio" value="3" name="rating">
+                                                            <input class="rating__item" type="radio" value="4" name="rating">
+                                                            <input class="rating__item" type="radio" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">5.0</div>
+                                                </div>
+                                                <a class="card-item__link-reviews" href="#">89 отзывов</a>
+                                            </div>
+                                            <h4 class="card-item__title">
+                                                <a href="card.html" title="Антиоксидантная сыворотка">Антиоксидантная сыворотка</a>
+                                            </h4>
+                                            <div class="card-item__important-info">
+                                                <div class="card-item__volume">
+                                                    <p>30 мл</p>
+                                                    <p>50 мл</p>
+                                                </div>
+                                                <p class="card-item__price">от 950 <span>&#8381;</span></p>
+                                            </div>
+                                            <button class="card-item__button btn btn--long" type="button">В корзину</button>
+                                        </div><!-- /.card-item__content -->
+                                    </div><!-- /.card-item -->
+                                </li>
+
+                                <li class="card-list__item swiper-slide">
+                                    <div class="card-item">
+                                        <p class="card-item__chevron card-item__chevron--sale">Скидка 50%</p>
+                                        <div class="card-item__attribute">
+                                            <button class="btn-favorite" type="button" title="Добавить в избранное">
+                                                <span class="visually-hidden">Добавить в избранное</span>
+                                            </button>
+                                        </div>
+                                        <a class="card-item__link" href="card.html">
+                                            <picture>
+                                                <source srcset="assets/img/product/product-img-4-small@1x.webp 1x, assets/img/product/product-img-4-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                                <source srcset="assets/img/product/product-img-4-small@1x.jpg 1x, assets/img/product/product-img-4-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                                <source srcset="assets/img/product/product-img-4@1x.webp 1x, assets/img/product/product-img-4@2x.webp 2x" type="image/webp">
+                                                <img class="img card-item__img" src="assets/img/product/product-img-4@1x.jpg" srcset="assets/img/product/product-img-4@2x.jpg 2x" alt="Шампунь и кондиционер для волос укрепляющий">
+                                            </picture>
+                                        </a>
+
+                                        <div class="card-item__content">
+                                            <div class="card-item__info-block">
+                                                <div class="card-item__rating rating">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input class="rating__item" type="radio" value="1" name="rating">
+                                                            <input class="rating__item" type="radio" value="2" name="rating">
+                                                            <input class="rating__item" type="radio" value="3" name="rating">
+                                                            <input class="rating__item" type="radio" value="4" name="rating">
+                                                            <input class="rating__item" type="radio" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">5.0</div>
+                                                </div>
+                                                <a class="card-item__link-reviews" href="#">78 отзывов</a>
+                                            </div>
+                                            <h4 class="card-item__title">
+                                                <a href="card.html" title="Шампунь + кондиционер для волос укрепляющий">Шампунь + кондиционер для волос укрепляющий</a>
+                                            </h4>
+                                            <div class="card-item__important-info">
+                                                <div class="card-item__volume">
+                                                    <p>500 мл</p>
+                                                </div>
+                                                <p class="card-item__price">890 &#8381;<s>1780 <span>&#8381;</span></s></p>
+                                            </div>
+                                            <button class="card-item__button btn btn--long" type="button">В корзину</button>
+                                        </div><!-- /.card-item__content -->
+                                    </div><!-- /.card-item -->
+                                </li>
+
+                                <li class="card-list__item swiper-slide">
+                                    <div class="card-item">
+                                        <div class="card-item__attribute">
+                                            <button class="btn-favorite" type="button" title="Добавить в избранное">
+                                                <span class="visually-hidden">Добавить в избранное</span>
+                                            </button>
+                                        </div>
+                                        <a class="card-item__link" href="card.html">
+                                            <picture>
+                                                <source srcset="assets/img/product/product-img-5-small@1x.webp 1x, assets/img/product/product-img-5-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                                <source srcset="assets/img/product/product-img-5-small@1x.jpg 1x, assets/img/product/product-img-5-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                                <source srcset="assets/img/product/product-img-5@1x.webp 1x, assets/img/product/product-img-5@2x.webp 2x" type="image/webp">
+                                                <img class="img card-item__img" src="assets/img/product/product-img-5@1x.jpg" srcset="assets/img/product/product-img-5@2x.jpg 2x" alt="Медовый скраб для тела">
+                                            </picture>
+                                        </a>
+
+                                        <div class="card-item__content">
+                                            <div class="card-item__info-block">
+                                                <div class="card-item__rating rating">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input class="rating__item" type="radio" value="1" name="rating">
+                                                            <input class="rating__item" type="radio" value="2" name="rating">
+                                                            <input class="rating__item" type="radio" value="3" name="rating">
+                                                            <input class="rating__item" type="radio" value="4" name="rating">
+                                                            <input class="rating__item" type="radio" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">4.6</div>
+                                                </div>
+                                                <a class="card-item__link-reviews" href="#">37 отзывов</a>
+                                            </div>
+                                            <h4 class="card-item__title">
+                                                <a href="card.html" title="Медовый скраб для тела">Медовый скраб для тела</a>
+                                            </h4>
+                                            <div class="card-item__important-info">
+                                                <div class="card-item__volume">
+                                                    <p>270 мл</p>
+                                                    <p>450 мл</p>
+                                                </div>
+                                                <p class="card-item__price">320 <span>&#8381;</span></p>
+                                            </div>
+                                            <button class="card-item__button btn btn--long" type="button">В корзину</button>
+                                        </div><!-- /.card-item__content -->
+                                    </div><!-- /.card-item -->
+                                </li>
+
+                                <li class="card-list__item swiper-slide">
+                                    <div class="card-item">
+                                        <div class="card-item__attribute">
+                                            <button class="btn-favorite" type="button" title="Добавить в избранное">
+                                                <span class="visually-hidden">Добавить в избранное</span>
+                                            </button>
+                                        </div>
+                                        <a class="card-item__link" href="card.html">
+                                            <picture>
+                                                <source srcset="assets/img/product/product-img-6-small@1x.webp 1x, assets/img/product/product-img-6-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                                <source srcset="assets/img/product/product-img-6-small@1x.jpg 1x, assets/img/product/product-img-6-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                                <source srcset="assets/img/product/product-img-6@1x.webp 1x, assets/img/product/product-img-6@2x.webp 2x" type="image/webp">
+                                                <img class="img card-item__img" src="assets/img/product/product-img-6@1x.jpg" srcset="assets/img/product/product-img-6@2x.jpg 2x" alt="Аргановое масло для волос">
+                                            </picture>
+                                        </a>
+
+                                        <div class="card-item__content">
+                                            <div class="card-item__info-block">
+                                                <div class="card-item__rating rating">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input class="rating__item" type="radio" value="1" name="rating">
+                                                            <input class="rating__item" type="radio" value="2" name="rating">
+                                                            <input class="rating__item" type="radio" value="3" name="rating">
+                                                            <input class="rating__item" type="radio" value="4" name="rating">
+                                                            <input class="rating__item" type="radio" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">5.0</div>
+                                                </div>
+                                                <a class="card-item__link-reviews" href="#">45 отзывов</a>
+                                            </div>
+                                            <h4 class="card-item__title">
+                                                <a href="card.html" title="Аргановое масло для волос">Аргановое масло для волос</a>
+                                            </h4>
+                                            <div class="card-item__important-info">
+                                                <div class="card-item__volume">
+                                                    <p>30 мл</p>
+                                                    <p>100 мл</p>
+                                                </div>
+                                                <p class="card-item__price">от 635 <span>&#8381;</span></p>
+                                            </div>
+                                            <button class="card-item__button btn btn--long" type="button">В корзину</button>
+                                        </div><!-- /.card-item__content -->
+                                    </div><!-- /.card-item -->
+                                </li>
+                            </ul>
+                        </div><!-- /.card-list -->
+                    </div><!-- /.best-sellers__slider-content -->
+                </div><!-- /.best-sellers -->
+
+            </div><!-- /.container -->
+        </section>
+
+
+        <!-- Stock -->
+        <section class="section--indent-less section--excretion" id="stock">
+            <div class="container">
+                <h2 class="section__title" data-aos="fade-right">Акции</h2>
+
+                <div class="stock swiper">
+                    <div class="stock__slider swiper-wrapper">
+                        <div class="stock__slider-item swiper-slide">
+                            <div class="stock__content block-division-small">
+                                <p>При первом заказе скидка 40% на набор &laquo;Королевский уход&raquo; :</p>
+                                <ul class="stock__content-list">
+                                    <li class="stock__content-item">
+                                        <span>Мыло с ароматом апельсина &mdash;&nbsp;70&nbsp;г</span>
+                                    </li>
+                                    <li class="stock__content-item">
+                                        <span>Мыло с ароматом лаванды &mdash;&nbsp;70&nbsp;г</span>
+                                    </li>
+                                    <li class="stock__content-item">
+                                        <span>Шоколадный скраб - пилинг для тела &mdash;&nbsp;250&nbsp;мл</span>
+                                    </li>
+                                    <li class="stock__content-item">
+                                        <span>Апельсиновое эфирное масло &mdash;&nbsp;10&nbsp;мл (2&nbsp;шт.)</span>
+                                    </li>
+                                    <li class="stock__content-item">
+                                        <span>Очищающая маска для лица &mdash;&nbsp;30&nbsp;г</span>
+                                    </li>
+                                </ul>
+                                <p class="stock__content-price">468 &#8381;<s>780 &#8381;</s></p>
+                            </div>
+                            <div class="stock__photo block-division-large">
+                                <div class="stock__photo-wrapper border-shift">
+                                    <picture>
+                                        <source srcset="assets/img/stock-slider/stock-slider-photo-2-small@1x.webp 1x, assets/img/stock-slider/stock-slider-photo-2-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                        <source srcset="assets/img/stock-slider/stock-slider-photo-2-small@1x.jpg 1x, assets/img/stock-slider/stock-slider-photo-2-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                        <source srcset="assets/img/stock-slider/stock-slider-photo-2@1x.webp 1x, assets/img/stock-slider/stock-slider-photo-2@2x.webp 2x" type="image/webp">
+                                        <img class="img" src="assets/img/stock-slider/stock-slider-photo-2@1x.jpg" srcset="assets/img/stock-slider/stock-slider-photo-2@2x.jpg 2x" alt="Набор для релакса - Королевский уход">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div><!-- /.stock__slider-item -->
+
+                        <div class="stock__slider-item swiper-slide">
+                            <div class="stock__content stock__content--center block-division-small">
+                                <p>При онлайн оплате заказа на сумму от <span>3000 &#8381;</span> в подарок облепиховое масло против секущихся кончиков</p>
+                                <a class="stock__content-button btn btn--standard" href="#">Подробнее</a>
+                            </div>
+                            <div class="stock__photo block-division-large">
+                                <div class="stock__photo-wrapper border-shift">
+                                    <picture>
+                                        <source srcset="assets/img/stock-slider/stock-slider-photo-1-small@1x.webp 1x, assets/img/stock-slider/stock-slider-photo-1-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                        <source srcset="assets/img/stock-slider/stock-slider-photo-1-small@1x.jpg 1x, assets/img/stock-slider/stock-slider-photo-1-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                        <source srcset="assets/img/stock-slider/stock-slider-photo-1@1x.webp 1x, assets/img/stock-slider/stock-slider-photo-1@2x.webp 2x" type="image/webp">
+                                        <img class="img" src="assets/img/stock-slider/stock-slider-photo-1@1x.jpg" srcset="assets/img/stock-slider/stock-slider-photo-1@2x.jpg 2x" alt="Облепиховое масло против секущихся кончиков">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div><!-- /.stock__slider-item -->
+
+                        <div class="stock__slider-item swiper-slide">
+                            <div class="stock__content stock__content--center block-division-small">
+                                <p>Тканевая маска в <span>подарок</span> при каждом заказе!</p>
+                                <a class="stock__content-button btn btn--standard" href="#">Подробнее</a>
+                            </div>
+                            <div class="stock__photo block-division-large">
+                                <div class="stock__photo-wrapper border-shift">
+                                    <picture>
+                                        <source srcset="assets/img/stock-slider/stock-slider-photo-3-small@1x.webp 1x, assets/img/stock-slider/stock-slider-photo-3-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                        <source srcset="assets/img/stock-slider/stock-slider-photo-3-small@1x.jpg 1x, assets/img/stock-slider/stock-slider-photo-3-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                        <source srcset="assets/img/stock-slider/stock-slider-photo-3@1x.webp 1x, assets/img/stock-slider/stock-slider-photo-3@2x.webp 2x" type="image/webp">
+                                        <img class="img" src="assets/img/stock-slider/stock-slider-photo-3@1x.jpg" srcset="assets/img/stock-slider/stock-slider-photo-3@2x.jpg 2x" alt="Девушка наносит тканевую маску от Natural drop">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div><!-- /.stock__slider-item -->
+                    </div><!-- /.stock__slider -->
+
+                    <div class="stock__arrows arrows">
+                        <div class="arrows__wrapper">
+                            <button class="arrows__item stock__arrows--prev" type="button">
+                                <svg class="arrows__icon">
+                                    <use href="#arrow-icon-prev"></use>
+                                </svg>
+                            </button>
+                            <button class="arrows__item stock__arrows--next" type="button">
+                                <svg class="arrows__icon">
+                                    <use href="#arrow-icon-next"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div><!-- /.stock__arrows -->
+                </div><!-- /.stock -->
+
+            </div><!-- /.container -->
+        </section>
+
+
+        <!-- Reviews -->
+        <section class="section--indent-less" id="reviews">
+            <div class="container">
+                <h2 class="visually-hidden">Отзывы</h2>
+
+                <div class="reviews">
+                    <div class="reviews__wrapper" data-aos="fade-right" data-aos-offset="200">
+                        <div class="reviews__slider swiper">
+                            <div class="reviews__slider-wrapper swiper-wrapper">
+
+                                <div class="reviews__item swiper-slide">
+                                    <div class="reviews__item-slider">
+                                        <picture>
+                                            <source srcset="assets/img/reviews/reviews-photo-1-small@1x.webp 1x, assets/img/reviews/reviews-photo-1-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                            <source srcset="assets/img/reviews/reviews-photo-1-small@1x.jpg 1x, assets/img/reviews/reviews-photo-1-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                            <source srcset="assets/img/reviews/reviews-photo-1@1x.webp 1x, assets/img/reviews/reviews-photo-1@2x.webp 2x" type="image/webp">
+                                            <img class="reviews__photo img" src="assets/img/reviews/reviews-photo-1@1x.jpg" srcset="assets/img/reviews/reviews-photo-1@2x.jpg 2x" alt="аватар автора отзыва Марии Филипповой">
+                                        </picture>
+                                        <div class="reviews__author">Мария Филиппова</div>
+                                        <div class="reviews__text reviews__text--fade">&laquo;Уже не первый год в моем доме преимущество отдано именно косметике Natural Drop. Современные, доступные и натуральные средства помогают мне ухаживать не только за собой, но и поддерживать мой дом в чистоте и при этом быть уверенной в безопасном составе.&raquo;</div>
+                                    </div>
+                                </div><!-- /.reviews__item -->
+
+                                <div class="reviews__item swiper-slide">
+                                    <div class="reviews__item-slider">
+                                        <picture>
+                                            <source srcset="assets/img/reviews/reviews-photo-2-small@1x.webp 1x, assets/img/reviews/reviews-photo-2-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                            <source srcset="assets/img/reviews/reviews-photo-2-small@1x.jpg 1x, assets/img/reviews/reviews-photo-2-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                            <source srcset="assets/img/reviews/reviews-photo-2@1x.webp 1x, assets/img/reviews/reviews-photo-2@2x.webp 2x" type="image/webp">
+                                            <img class="reviews__photo img" src="assets/img/reviews/reviews-photo-2@1x.jpg" srcset="assets/img/reviews/reviews-photo-2@2x.jpg 2x" alt="аватар автор отзыва Екатерины Калининой">
+                                        </picture>
+                                        <div class="reviews__author">Екатерина Калинина</div>
+                                        <div class="reviews__text reviews__text--fade">&laquo;Уже не первый год в моем доме преимущество отдано именно косметике Natural Drop. Современные, доступные и натуральные средства помогают мне ухаживать не только за собой, но и поддерживать мой дом в чистоте и при этом быть уверенной в безопасном составе.&raquo;</div>
+                                    </div>
+                                </div><!-- /.reviews__item -->
+
+                                <div class="reviews__item swiper-slide">
+                                    <div class="reviews__item-slider">
+                                        <picture>
+                                            <source srcset="assets/img/reviews/reviews-photo-3-small@1x.webp 1x, assets/img/reviews/reviews-photo-3-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                            <source srcset="assets/img/reviews/reviews-photo-3-small@1x.jpg 1x, assets/img/reviews/reviews-photo-3-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                            <source srcset="assets/img/reviews/reviews-photo-3@1x.webp 1x, assets/img/reviews/reviews-photo-3@2x.webp 2x" type="image/webp">
+                                            <img class="reviews__photo img" src="assets/img/reviews/reviews-photo-3@1x.jpg" srcset="assets/img/reviews/reviews-photo-3@2x.jpg 2x" alt="аваар автора отзыва Юлии Марковой">
+                                        </picture>
+                                        <div class="reviews__author">Юлия Маркова</div>
+                                        <div class="reviews__text reviews__text--fade">&laquo;Уже не первый год в моем доме преимущество отдано именно косметике Natural Drop. Современные, доступные и натуральные средства помогают мне ухаживать не только за собой, но и поддерживать мой дом в чистоте и при этом быть уверенной в безопасном составе.&raquo;</div>
+                                    </div>
+                                </div><!-- /.reviews__item -->
+                            </div><!-- /.reviews__slider-wrapper -->
+
+                            <div class="swiper-pagination"></div>
+                        </div><!-- /.reviews__slider -->
+                    </div><!-- /.reviews__wrapper -->
+
+                    <div class="reviews__arrows arrows" data-aos="fade-right" data-aos-offset="200">
+                        <div class="arrows__wrapper arrows__wrapper--more arrows__wrapper--follow">
+                            <form action="https://www.instagram.com/" target="_blank">
+                                <button class="arrows__item arrows__item--follow" type="submit">
+                                    <span>Больше в instagram</span>
+                                    <svg class="arrows__icon">
+                                        <use href="#arrow-icon-next"></use>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div><!-- /.reviews__arrows -->
+                </div><!-- /.reviews -->
+
+            </div><!-- /.container -->
+        </section>
+
+
+        <!-- Subscription -->
+        <section class="section section--accent">
+            <div class="container">
+                <h2 class="visually-hidden">Подписка на рассылку от Natural drop</h2>
+
+                <div class="subscription" data-aos="zoom-out" data-aos-offset="200">
+                    <div class="subscription__wrapper">
+                        <div class="subscription__content">
+                            <h3 class="subscription__title">Узнавайте об акциях и скидках&nbsp;первыми!</h3>
+                            <div class="subscription__description">
+                                <p>Один раз в месяц мы будем присылать вам информацию о наших последних новинках, скидках и акциях. Обещаем быть полезными!</p>
+                            </div>
+                            <div class="subscription__description--mobile">
+                                <p>Обещаем быть полезными!</p>
+                            </div>
+                        </div>
+
+                        <form class="subscription__form" action="/" method="POST">
+                            <label class="visually-hidden" for="form-subscribe">E-mail</label>
+                            <input class="subscription__input" id="form-subscribe" type="email" name="subscribe" placeholder="E-mail">
+                            <button class="subscription__btn btn btn--standard" type="submit">Подписаться</button>
+                        </form>
+
+                        <div class="subscription__footer">
+                            <p>Нажимая на кнопку Подписаться, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="#" target="_blank">Политикой конфиденциальности</a></p>
+                        </div>
+                    </div><!-- /.subscription__wrapper -->
+                </div><!-- /.subscription -->
+
+            </div><!-- /.container -->
+        </section>
+
+
+        <!-- Blog -->
+        <section class="section" id="blog">
+            <div class="container">
+                <h2 class="section__title" data-aos="fade-right">Полезно знать</h2>
+
+                <div class="blog">
+                    <div class="blog__wrapper">
+                        <article class="blog__article article" data-aos="fade-right" data-aos-offset="300">
+                            <h4 class="article__title article__title--fade">
+                                <a href="#">Как правильно ухаживать за кожей рук в зимний период?</a>
+                            </h4>
+                            <a class="article__img" href="#">
+                                <picture>
+                                    <source srcset="assets/img/blog-article/blog-article-photo-1-small@1x.webp 1x, assets/img/blog-article/blog-article-photo-1-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                    <source srcset="assets/img/blog-article/blog-article-photo-1-small@1x.jpg 1x, assets/img/blog-article/blog-article-photo-1-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                    <source srcset="assets/img/blog-article/blog-article-photo-1@1x.webp 1x, assets/img/blog-article/blog-article-photo-1@2x.webp 2x" type="image/webp">
+                                    <img class="img" src="assets/img/blog-article/blog-article-photo-1@1x.jpg" srcset="assets/img/blog-article/blog-article-photo-1@2x.jpg 2x" alt="Уход за руками - нанесение увлажняющего масла">
+                                </picture>
+                            </a>
+                            <div class="article__text article__text--fade">
+                                <p>Каждая из нас мечтает о мягких и нежных ручках. Но поскольку в современном мире, именно они сталкиваются с наибольшим негативным влиянием внешнего воздействия: ежедневное соприкосновение с различными моющими и чистящими средствами, холодом и прочее, эта мечта для многих остается несбыточной.</p>
+                            </div>
+                            <time class="article__date" datetime="2021-12-01">01 Декабря, 2021</time>
+                        </article>
+
+                        <article class="blog__article article" data-aos="fade-left" data-aos-offset="300">
+                            <h4 class="article__title article__title--fade">
+                                <a href="#">Natural Drop &mdash; правильный природный уход для всей семьи</a>
+                            </h4>
+                            <a class="article__img" href="#">
+                                <picture>
+                                    <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 575px)" type="image/jpg">
+
+                                    <source srcset="assets/img/blog-article/blog-article-photo-2@1x.webp 1x, assets/img/blog-article/blog-article-photo-2@2x.webp 2x" type="image/webp">
+                                    <img class="img" src="assets/img/blog-article/blog-article-photo-2@1x.jpg" srcset="assets/img/blog-article/blog-article-photo-2@2x.jpg 2x" alt="Девушка делает массаж лица роликом компании">
+                                </picture>
+                            </a>
+                            <div class="article__text article__text--fade">
+                                <p>Наша косметическая продукция производится на основе натуральных природных компонентов и содержит термальную воду природного источника, все это позволяет создать невероятно легкий аромат каждого продукта.</p>
+                            </div>
+                            <time class="article__date" datetime="2021-11-20">20 Ноября, 2021</time>
+                        </article>
+                    </div><!-- /.blog__wrapper -->
+
+                    <div class="arrows" data-aos="fade-right" data-aos-offset="50">
+                        <div class="arrows__wrapper arrows__wrapper--read arrows__wrapper--follow">
+                            <form action="/" target="_blank">
+                                <button class="arrows__item arrows__item--follow" type="submit">
+                                    <span>Читать больше</span>
+                                    <svg class="arrows__icon">
+                                        <use href="#arrow-icon-next"></use>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div><!-- /.arrows -->
+                </div><!-- /.blog -->
+
+            </div><!-- /.container -->
+        </section>
+
+
+        <!-- Contacts -->
+        <section class="section--indent-less section--excretion" id="contacts">
+            <div class="container">
+                <h2 class="section__title">Контакты</h2>
+
+                <div class="contacts">
+                    <div class="contacts__wrapper">
+                        <dl class="contacts__list block-division-small" data-aos="fade-right" data-aos-offset="300">
+                            <div class="contacts__list-item">
+                                <dt class="contacts__list-title">Адрес:</dt>
+                                <dd class="contacts__list-description">
+                                    <address>Ижевск, ул.&nbsp;Михаила&nbsp;Петрова,&nbsp;29 (ТРК&nbsp;Петровский)</address>
+                                </dd>
+                            </div>
+
+                            <div class="contacts__list-item">
+                                <dt class="contacts__list-title">Телефон:</dt>
+                                <dd class="contacts__list-description contacts__list-description--change">
+                                    <a href="tel:88001001010">8 800 100 10 10</a>
+                                </dd>
+                            </div>
+
+                            <div class="contacts__list-item">
+                                <dt class="contacts__list-title">E-mail:</dt>
+                                <dd class="contacts__list-description contacts__list-description--change">
+                                    <a href="mailto:info@naturaldrop.com">info@naturaldrop.com</a>
+                                </dd>
+                            </div>
+
+                            <div class="contacts__list-item">
+                                <dt class="contacts__list-title">Социальные сети:</dt>
+                                <dd class="contacts__list-description">
+                                    <ul class="social">
+                                        <li class="social__item">
+                                            <a href="#" target="_blank">instagram</a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="#" target="_blank">vk</a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="#" target="_blank">telegram</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </dl><!-- /.contacts__list -->
+
+                        <div class="contacts__map block-division-large" data-aos="fade-left" data-aos-offset="300">
+                            <div class="contacts__map-wrapper border-shift">
+                                <div class="contacts__map-item">
+                                    <div style="position:relative;overflow:hidden;">
+                                        <a href="https://yandex.ru/maps/org/petrovskiy/1025654138/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Петровский</a><a href="https://yandex.ru/maps/44/izhevsk/category/shopping_mall/184108083/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Торговый центр в Ижевске</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUuyXgDlA" style="position:relative;width:100%;border:0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.contacts__map -->
+
+                        <div class="contacts__map--open">
+                            <div class="contacts__map-link">
+                                <a href="https://yandex.ru/maps/-/CCUyi2CrhA" target="_blank">Показать на карте</a>
+                            </div>
+                        </div>
+
+                    </div><!-- /.contacts__wrapper -->
+                </div><!-- /.contacts -->
+
+            </div><!-- /.container -->
+        </section>
+
+        <!-- Feedback -->
+        <section class="section" id="feedback" data-aos="zoom-out" data-aos-offset="300" data-aos-duration="1000">
+            <div class="container">
+                <h2 class="visually-hidden">Обратная связь</h2>
+
+                <div class="feedback">
+                    <h3 class="feedback__title">Вы помогаете нам становиться лучше!</h3>
+                    <a href="#" class="modal__open-btn btn btn--accent">Сообщить о проблеме</a>
+                </div>
+            </div><!-- /.container -->
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="container">
+                <div class="footer__wrapper">
+
+                    <div class="footer__col">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="catalog.html">Каталог</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">Блог</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#stock">Акции</a>
+                            </li>
+                        </ul>
+
+                        <h3 class="footer__col-list-title">
+                            <a href="#contacts">Контакты</a>
+                        </h3>
+                        <ul class="footer__list-social">
+                            <li class="footer__item footer__item-social">
+                                <a href="tel:88001001010">8 800 100 10 10</a>
+                            </li>
+                            <li class="footer__item footer__item-social">
+                                <a href="mailto:info@naturaldrop.com">info@naturaldrop.com</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.footer__col -->
+
+                    <div class="footer__col footer__col--center">
+                        <a class="logo" href="index.html">
+                            <picture>
+                                <source srcset="assets/img/logo/logo-small@1x.webp 1x, assets/img/logo/logo-small@2x.webp 2x" media="(max-width: 360px)" type="image/webp">
+                                <source srcset="assets/img/logo/logo-small.svg" media="(max-width: 360px)" type="image/svg+xml">
+
+                                <source srcset="assets/img/logo/logo-medium@1x.webp 1x, assets/img/logo/logo-medium@2x.webp 2x" media="(max-width: 575px)" type="image/webp">
+                                <source srcset="assets/img/logo/logo-medium.svg" media="(max-width: 575px)" type="image/svg+xml">
+
+                                <source srcset="assets/img/logo/logo-large@1x.webp 1x, assets/img/logo/logo-large@2x.webp 2x" media="(max-width: 875px)" type="image/webp">
+                                <source srcset="assets/img/logo-large.svg" media="(max-width: 875px)" type="image/svg+xml">
+
+                                <source srcset="assets/img/logo/logo@1x.webp 1x, assets/img/logo/logo@2x.webp 2x" type="image/webp">
+                                <source srcset="assets/img/logo/logo.svg" type="image/svg+xml">
+                                <img class="img" src="assets/img/logo/logo.png" alt="Логотип Natural drop">
+                            </picture>
+                        </a>
+
+                        <ul class="social">
+                            <li class="social__item">
+                                <a href="#" target="_blank">instagram</a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" target="_blank">vk</a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" target="_blank">telegram</a>
+                            </li>
+                        </ul>
+
+                        <div class="footer__col-bottom footer-col-bottom">
+                            <h3>Мы на маркетплейсах:</h3>
+                            <ul class="footer-col-bottom__list">
+                                <li>
+                                    <a class="footer-col-bottom__item  footer-col-bottom__item--ozon" href="#" target="_blank">OZON</a>
+                                </li>
+                                <li>
+                                    <a class="footer-col-bottom__item footer-col-bottom__item--yandex-market" href="#" target="_blank">Яндекс.Маркет</a>
+                                </li>
+                                <li>
+                                    <a class="footer-col-bottom__item footer-col-bottom__item--wildberries" href="#" target="_blank">Wildberries</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /.footer__col -->
+
+                    <div class="footer__col footer-col-addition footer__col--right">
+                        <dl class="footer-col-addition__list">
+                            <dt>Сервис</dt>
+                            <dd class="footer-col-addition__item">
+                                <a href="#">Доставка и оплата</a>
+                            </dd>
+
+                            <dt>Дополнительно</dt>
+                            <dd>
+                                <ul>
+                                    <li class="footer-col-addition__item">
+                                        <a href="#">Сертификаты</a>
+                                    </li>
+                                    <li class="footer-col-addition__item">
+                                        <a href="#">Бонсуная программа</a>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div><!-- /.footer__col -->
+
+                </div><!-- /.footer__wrapper -->
+            </div><!-- /.container -->
+        </div><!-- /.footer__inner -->
+
+        <div class="copyright">
+            <div class="container">
+                <h2 class="visually-hidden">Права и политика конфиденциальности</h2>
+
+                <div class="copyright__wrapper">
+                    <div class="copyright__col">
+                        <a href="#">Пользовательское соглашение</a>
+                    </div>
+                    <div class="copyright__col">
+                        <a href="#">Политика обработки персональных данных</a>
+                    </div>
+                </div>
+                <div class="copyright__text">
+                    <span>© 2021</span>
+                </div>
+            </div><!-- /.container -->
+        </div><!-- /.copyright -->
+
+        <a class="scroll-up-link smooth-scroll" href="#start" title="Вверх">
+            <span class="visually-hidden">Вернуться в начало</span>
+        </a>
+    </footer>
+
+</div><!-- /.page -->
+
+    <!-- Modals -->
+    <div class="modal">
+        <div class="modal__inner">
+            <div class="modal__wrapper">
+                <div class="modal__header">
+                    <h4 class="modal__title">Форма отзывов и предложений</h4>
+                    <div class="modal__text">Сообщите о проблеме &mdash; помогите нам стать лучше!</div>
+                </div>
+
+                <form class="modal__form form" action="/" method="POST">
+                    <div class="form__group">
+                        <label class="form__label" for="form-name">Имя</label>
+                        <input class="form__input" id="form-name" type="text" name="name" placeholder="Имя">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="form-email">Email</label>
+                        <input class="form__input" id="form-email" type="email" name="email" placeholder="E-mail">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="form-tel">Телефон</label>
+                        <input class="form__input" id="form-tel" type="tel" name="tel" placeholder="+7" minlength="11">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="form-textarea">Комментарий</label>
+                        <textarea class="form__textarea" id="form-textarea" name="text" placeholder="Ваши предложения по улушению"></textarea>
+                    </div>
+                    <div class="form__group">
+                        <label class="visually-hidden" for="form-photo">Прикрепить изображение</label>
+                        <input class="form__input form__input--photo" id="form-photo" type="file" name="photo">
+                    </div>
+                    <div class="modal__btn">
+                        <button class="btn btn--standard" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div><!-- /.modal__wrapper-->
+
+            <button class="modal__close" type="button">
+                <img class="img" src="assets/img/close.svg" alt="Кнопка закрытия модального окна">
+            </button>
+        </div><!-- /.modal__inner -->
+    </div><!-- /.modal -->
+
+
+<!-- Javascript -->
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
